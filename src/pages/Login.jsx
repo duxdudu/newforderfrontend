@@ -36,6 +36,7 @@ function Login() {
 
       // Redirect to dashboard
       navigate("/dashboard");
+    // eslint-disable-next-line no-unused-vars
     } catch (err) {
       setError("Could not connect to server.");
     } finally {
@@ -52,6 +53,7 @@ function Login() {
 
         <form onSubmit={handleLogin} className="flex flex-col gap-4">
           <div>
+          <h1>this our fist login page</h1>
             <label className="block text-sm font-medium mb-1">Email</label>
             <input
               type="email"
